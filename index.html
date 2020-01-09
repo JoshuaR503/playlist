@@ -4,12 +4,75 @@
         <title> Playlist Project! </title>
         <!-- Your CSS -->
         <link type="text/css" rel="stylesheet" href="css/style.css" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
     </head>
-    <body>
-        
+    <body class="container">
+
+        <h3 class="center">Play List Manager</h3>
+
+        <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input placeholder="Placeholder" id="song_artist" type="text" class="validate" required>
+                  <label>Artist name</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="song_name" type="text" class="validate" required>
+                  <label>Song Name</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="song_file" type="text" class="validate" required>
+                  <label >Song File</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="song_picture" type="text" class="validate" required>
+                  <label >Song Picture</label>
+                </div>
+              </div>
+
+              <a class="waves-effect waves-light btn" id="save_btn" href="#">Save</a>
+
+
+            </form>
+        </div>
+
+        <div class="row">
+            <div class="col s12">
+              <table class="striped">
+                <thead>
+                  <tr>
+                      <th><h5>Picture</h5></th>
+                      <th><h5>Artist Name</h5></th>
+                      <th><h5>Song Name</h5></th>
+                      <th><h5>Play</h5></th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Alvin</td>
+                    <td>Eclair</td>
+                    <td>$0.87</td>
+                    <td>Alan</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
         
         
         <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
         <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
         <!-- Your Javascript -->
         <script src="js/script.js"></script>
