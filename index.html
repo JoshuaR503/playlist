@@ -10,13 +10,13 @@
     </head>
     <body class="container">
 
-        <h3 class="center">Play List Manager</h3>
+        <h3 class="center">Playlist Manager</h3>
 
         <div class="row">
             <form class="col s12">
               <div class="row">
                 <div class="input-field col s6">
-                  <input placeholder="Placeholder" id="song_artist" type="text" class="validate" required>
+                  <input id="song_artist" type="text" class="validate" required>
                   <label>Artist name</label>
                 </div>
                 <div class="input-field col s6">
@@ -27,7 +27,7 @@
 
               <div class="row">
                 <div class="input-field col s12">
-                  <input id="song_file" type="text" class="validate" required>
+                  <input id="song_audio" type="text" class="validate" required>
                   <label >Song File</label>
                 </div>
               </div>
@@ -56,15 +56,7 @@
 
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <td>Alvin</td>
-                    <td>Eclair</td>
-                    <td>$0.87</td>
-                    <td>Alan</td>
-                  </tr>
-
-                </tbody>
+                <tbody class="tableBody"></tbody>
               </table>
             </div>
           </div>
@@ -75,6 +67,6 @@
 
         <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
         <!-- Your Javascript -->
-        <script src="js/script.js"></script>
+        <script defer src="js/script.js"></script>
     </body>
 </html>
